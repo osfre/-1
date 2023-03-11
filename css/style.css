@@ -16,6 +16,9 @@
 html {
     scroll-behavior: smooth;
 }
+body{
+    overflow-x: hidden;
+}
 /* navbar */
 .navbar {
     padding: 20px 0;
@@ -168,4 +171,112 @@ button.btn.btn-danger.dropdown-toggle {
     left: 0;
     right: auto;
 }
-/*  */
+/* hero */
+/* SuccessPartners */
+.title {
+    font-weight: bold;
+    font-size: 35px;
+    padding-top: 20px;
+    color: #000000;
+}
+.imgs {
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: scroll 40s linear infinite;
+} 
+.slider {
+    overflow: hidden;
+    position: relative;
+    width: auto;
+}
+.imgs img {
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    padding: 15px;
+    width: 168.46px;
+    height: 168.46px;
+    margin: 0 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+}
+/* SuccessPartners */
+/* whoWeAre */
+.whoWeAre {
+    background-image: url(../img/back.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    padding: 30px;
+}
+.title-whoWeAre {
+    background: linear-gradient(125.44deg, #0891F9 2.4%, #9C51C7 37.71%, #F78C62 66.22%, #FFD804 98.43%);
+    padding: 100px 50px;
+    text-align: center;
+    border-radius: 40px;
+    position: absolute;
+    z-index: 2;
+}
+.title-whoWeAre::before {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 40px;
+    z-index: -1;
+}
+.title-whoWeAre span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 37px;
+    color: #142030;
+}
+.title-whoWeAre h5 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 66px;
+    color: #142030;
+}
+.title-whoWeAre p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 37px;
+    text-align: center;
+    color: #142030;
+}
+.title-whoWeAre button {
+    border: 2px solid #142030;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 30px;
+    padding: 12px 93px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 37px;
+    color: #142030;
+    transition: all 0.3s;
+}
+.title-whoWeAre button:hover {
+    background: linear-gradient(92.94deg, #0891F9 5.55%, #9C51C7 38.34%, #F78C62 64.82%, #FFD804 94.73%);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    border: 2px solid transparent;
+}
+/* whoWeAre */

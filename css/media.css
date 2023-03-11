@@ -26,6 +26,9 @@
     .menu-icon {
         display: block;
     }
+    .title-whoWeAre {
+        padding: 30px;
+    }
 }
 @media (max-width:1200px) {
     input.form-control {
@@ -34,5 +37,10 @@
     .btn[type="submit"] {
         position: relative;
         display: none;
+    }
+}
+@media (max-width:767px) {
+    .whoWeAre {
+        padding: 43px 0;
     }
 }
