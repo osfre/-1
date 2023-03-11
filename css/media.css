@@ -1,0 +1,38 @@
+@media (max-width:991px) {
+    .btn[type="submit"] {
+        position: relative;
+        display: block !important;
+    }
+    div#navbarSupportedContent {
+        background: #142030;
+        height: 100vh;
+        position: absolute;
+        top: 0%;
+        left: 100%;
+        width: 100%;
+        padding: 125px 42px;
+        display: block;
+        transition: all 0.3s;
+    }
+    .close-nav {
+        display: block;
+    }
+    div#navbarSupportedContent.show1 {
+        left: 0;
+    }
+    .navbar-nav {
+        --bs-nav-link-padding-y: 1.5rem;
+    }
+    .menu-icon {
+        display: block;
+    }
+}
+@media (max-width:1200px) {
+    input.form-control {
+        display: none;
+    }
+    .btn[type="submit"] {
+        position: relative;
+        display: none;
+    }
+}
